@@ -25,7 +25,7 @@ Module.register("MMM-network-signal", {
 		icon_height: 45, // space for the icon in px
 		font_size: 1, // font size in em
 		margin-top: 5, // margin top in px
-		margin-top: 0 // margin bottom in px
+		margin-bottom: 0 // margin bottom in px
     },
     getTranslations: function() {
 		return {
