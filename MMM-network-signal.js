@@ -57,7 +57,7 @@ Module.register("MMM-network-signal", {
         if (this.config.showMessage)
         {
             var connStatus = document.createElement("p");
-            connStatus.style = `text-align:center; font-size:${this.config.icon_height}em;`;
+            connStatus.style = `text-align:center; font-size:${this.config.font_sizet}em;`;
         }
 
         // Changing icon
