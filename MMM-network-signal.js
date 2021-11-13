@@ -21,7 +21,9 @@ Module.register("MMM-network-signal", {
             weak: 500,
         },
         flexDirection: 'row', // set to 'row' to display the row in left-to-right mode, 'row-reverse' to display the row in right-to-left mode
-        scale: 0.45 // scale for the icon, must be greater than 0
+        icon_scale: 0.45, // scale for the icon, must be greater than 0
+		icon_height: 45, // space for the icon in px
+		font_size: 1 // font size in em
     },
     getTranslations: function() {
 		return {
@@ -51,11 +53,11 @@ Module.register("MMM-network-signal", {
         const content = document.createElement("div");
         content.style = `display: flex;flex-direction: ${this.config.flexDirection};justify-content: space-between; align-items: center`;
         const wifiSign = document.createElement("img");
-        wifiSign.style = `transform:scale(${this.config.scale})`;
+        wifiSign.style = `transform:scale(${this.config.icon_scale}); height: ${this.config.icon_height}px;`;
         if (this.config.showMessage)
         {
             var connStatus = document.createElement("p");
-            connStatus.style = "text-align:center;font-size:0.65em";
+            connStatus.style = `text-align:center; font-size:${this.config.icon_height}em;`;
         }
 
         // Changing icon
