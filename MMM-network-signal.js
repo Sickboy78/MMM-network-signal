@@ -23,7 +23,9 @@ Module.register("MMM-network-signal", {
         flexDirection: 'row', // set to 'row' to display the row in left-to-right mode, 'row-reverse' to display the row in right-to-left mode
         icon_scale: 0.45, // scale for the icon, must be greater than 0
 		icon_height: 45, // space for the icon in px
-		font_size: 1 // font size in em
+		font_size: 1, // font size in em
+		margin-top: 5, // margin top in px
+		margin-top: 0 // margin bottom in px
     },
     getTranslations: function() {
 		return {
@@ -57,7 +59,7 @@ Module.register("MMM-network-signal", {
         if (this.config.showMessage)
         {
             var connStatus = document.createElement("p");
-            connStatus.style = `text-align:center; font-size:${this.config.font_sizet}em;`;
+            connStatus.style = `text-align:center; font-size:${this.config.font_size}em; margin-top:${this.config.margin_top}px; margin-bottom:${this.config.margin-bottom}px;`;
         }
 
         // Changing icon
