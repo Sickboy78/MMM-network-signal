@@ -24,8 +24,8 @@ Module.register("MMM-network-signal", {
         icon_scale: 0.45, // scale for the icon, must be greater than 0
 		icon_height: 45, // space for the icon in px
 		font_size: 1, // font size in em
-		margin-top: 5, // margin top in px
-		margin-bottom: 0 // margin bottom in px
+		margin_top: 5, // margin top in px
+		margin_bottom: 0 // margin bottom in px
     },
     getTranslations: function() {
 		return {
@@ -59,7 +59,7 @@ Module.register("MMM-network-signal", {
         if (this.config.showMessage)
         {
             var connStatus = document.createElement("p");
-            connStatus.style = `text-align:center; font-size:${this.config.font_size}em; margin-top:${this.config.margin_top}px; margin-bottom:${this.config.margin-bottom}px;`;
+            connStatus.style = `text-align:center; font-size:${this.config.font_size}em; margin-top:${this.config.margin_top}px; margin-bottom:${this.config.margin_bottom}px;`;
         }
 
         // Changing icon
